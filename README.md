@@ -4,6 +4,14 @@ A lightweight native Windows utility for converting and editing files through a 
 
 This is an independent implementation inspired by [Tangerine for Mac](https://tangerineformac.com/). It is not affiliated with or endorsed by the original publisher. The MIT license covers this project's original code; it does not grant rights to third-party branding or reference assets.
 
+## Preview
+
+Drag a file, tap a shortcut, and drop onto the operation you need.
+
+| Convert · Shift | Tools · Ctrl | Actions · Alt |
+| :---: | :---: | :---: |
+| <img src="docs/images/convert-wheel.png" alt="Image conversion wheel with JPG selected and WebP, HEIC, TIFF, AVIF, BMP and PDF options" width="240"> | <img src="docs/images/tools-wheel.png" alt="Image tools wheel with Compress selected and Metadata, Edit, Annotate, Add BG, Crop and Redact options" width="240"> | <img src="docs/images/actions-wheel.png" alt="File actions wheel with Share selected and Float, Copy, Move, Copy Path and Terminal options" width="240"> |
+
 ## Get started
 
 Requires **Windows 10 version 2004 or later, x64**. Windows 11 is supported.

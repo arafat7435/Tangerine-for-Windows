@@ -22,4 +22,6 @@ Do not commit or release the reference audio until a compatible redistribution p
 
 ## Other references
 
-Local research material is excluded as a whole. No downloaded website HTML/JavaScript, video frames, supplied screenshots, personal fixtures, or images with unclear provenance are published. New documentation screenshots should use synthetic or suitably licensed inputs and avoid personal paths.
+Local research material is excluded as a whole. Downloaded website HTML/JavaScript, reference video frames and screenshots, personal fixtures, and images with unclear provenance are not part of the public source package.
+
+The three documentation images in `docs/images/` were supplied by the maintainer for the README. They show the Windows application's Convert, Tools and Actions wheels without filenames or personal paths. New documentation screenshots should use synthetic or suitably licensed inputs and avoid personal paths.
