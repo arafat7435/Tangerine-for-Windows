@@ -1,0 +1,32 @@
+[
+  {
+    "File": "Apache-2.0.txt",
+    "Source": "https://www.apache.org/licenses/LICENSE-2.0.txt",
+    "SHA256": "CFC7749B96F63BD31C3C42B5C471BF756814053E847C10F3EB003417BC523D30"
+  },
+  {
+    "File": "PDFsharp-LICENSE.txt",
+    "Source": "https://raw.githubusercontent.com/empira/PDFsharp/v6.2.2/LICENSE",
+    "SHA256": "F82F46A068823BF3A33202058A6EF9B0BFC0D4203418C09873161A34E34198CF"
+  },
+  {
+    "File": "SharpCompress-LICENSE.txt",
+    "Source": "https://raw.githubusercontent.com/adamhathcock/sharpcompress/master/LICENSE.txt",
+    "SHA256": "B7CA2B6174CEE11AFE41D78B48527E3D7659A4435C25019A4A5E072299A2F8ED"
+  },
+  {
+    "File": "PdfPig-LICENSE.txt",
+    "Source": "https://raw.githubusercontent.com/UglyToad/PdfPig/v0.1.16/LICENSE",
+    "SHA256": "4C510E162F896EA43B4B1CF1B743641D7C756F1004D0E5EAF0615B28B7DED409"
+  },
+  {
+    "File": "PDFium-packaging-LICENSE.txt",
+    "Source": "https://raw.githubusercontent.com/bblanchon/pdfium-binaries/master/LICENSE",
+    "SHA256": "493ABC10084B58F97DCE3FAC1654624E1A25788F17180FE8925786C266CD2416"
+  },
+  {
+    "File": "Windows-SDK-license.rtf",
+    "Source": "https://aka.ms/WinSDKLicenseURL",
+    "SHA256": "DD07EB178E00C6BBA4148457FC00FF77CD4887EB521D504186FE59C9EC8BBE62"
+  }
+]

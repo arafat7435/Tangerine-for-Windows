@@ -1,0 +1,7 @@
+<Project>
+  <PropertyGroup>
+    <TangerineBuildRoot Condition="'$(TangerineBuildRoot)' == ''">$(MSBuildThisFileDirectory)artifacts</TangerineBuildRoot>
+    <BaseIntermediateOutputPath>$(TangerineBuildRoot)\obj\$(MSBuildProjectName)\</BaseIntermediateOutputPath>
+    <BaseOutputPath>$(TangerineBuildRoot)\bin\</BaseOutputPath>
+  </PropertyGroup>
+</Project>

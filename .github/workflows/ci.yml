@@ -1,0 +1,47 @@
+name: Windows build and core checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-2022
+    timeout-minutes: 20
+    defaults:
+      run:
+        shell: pwsh
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-dotnet@67a3573c9a986a3f9c594539f4ab511d57bb3ce9 # v4
+        with:
+          global-json-file: global.json
+      - name: Check public source inventory
+        run: ./scripts/check-source.ps1
+      - name: Build and validate public package
+        run: ./scripts/package-release.ps1 -BuildRoot "$env:RUNNER_TEMP/tangerine-public" -OutputDirectory ./dist
+      - name: Build and validate standalone EXE
+        run: ./scripts/package-release.ps1 -BuildRoot "$env:RUNNER_TEMP/tangerine-standalone" -OutputDirectory ./dist -Standalone
+      - name: Package public source
+        run: ./scripts/package-source.ps1 -OutputPath ./dist/Tangerine-for-Windows-source.zip
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: Tangerine-for-Windows
+          path: dist/*
+          if-no-files-found: error
+      - name: Upload core test report
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
+        with:
+          name: core-test-report
+          path: |
+            ${{ runner.temp }}/tangerine-public/smoke-results/results.json
+            ${{ runner.temp }}/tangerine-standalone/smoke-results/results.json
+          if-no-files-found: warn

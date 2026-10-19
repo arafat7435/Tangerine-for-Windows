@@ -1,0 +1,27 @@
+.tools/
+bin/
+obj/
+artifacts/
+*.user
+*.log
+research/website.*
+.local-app-path
+*.lnk
+# Machine-specific research, private references and generated test artifacts.
+research/
+dist/
+test-results/
+.vs/
+.idea/
+__pycache__/
+*.py[cod]
+*.tmp
+*.bak
+*.pfx
+*.p12
+*.key
+.env
+.env.*
+!.env.example
+# Kept locally by request; no redistribution license has been established.
+Tangerine/Assets/highlight.wav

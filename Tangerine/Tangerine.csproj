@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows10.0.19041.0</TargetFramework>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <PlatformTarget>x64</PlatformTarget>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+    <ApplicationIcon>Assets\tangerine.ico</ApplicationIcon>
+    <AssemblyName>Tangerine</AssemblyName>
+    <RootNamespace>Tangerine</RootNamespace>
+    <Version>0.1.0</Version>
+    <Product>Tangerine for Windows</Product>
+    <Description>Independent native Windows file conversion and editing tools.</Description>
+    <Authors>Tangerine for Windows contributors</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RestorePackagesWithLockFile>true</RestorePackagesWithLockFile>
+    <NuGetAuditMode>all</NuGetAuditMode>
+    <WarningsAsErrors>$(WarningsAsErrors);NU1903;NU1904</WarningsAsErrors>
+    <Deterministic>true</Deterministic>
+    <DebugType>embedded</DebugType>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+    <PathMap>$(MSBuildProjectDirectory)=/_/Tangerine,$(TangerineBuildRoot)=/_/build</PathMap>
+    <TangerinePublicRelease Condition="'$(TangerinePublicRelease)' == ''">false</TangerinePublicRelease>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(TangerineNoticesDirectory)' != ''">
+    <Content Include="$(TangerineNoticesDirectory)\**\*" Link="notices\%(RecursiveDir)%(Filename)%(Extension)" CopyToOutputDirectory="PreserveNewest" CopyToPublishDirectory="PreserveNewest" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Assets\highlight.wav" LogicalName="Tangerine.Assets.highlight.wav" Condition="'$(TangerinePublicRelease)' != 'true' and Exists('Assets\highlight.wav')" />
+    <PackageReference Include="Magick.NET-Q8-x64" Version="15.0.0" />
+    <PackageReference Include="PDFsharp" Version="6.2.2" />
+    <PackageReference Include="SharpCompress" Version="1.0.0" />
+    <PackageReference Include="PdfPig" Version="0.1.16" />
+    <PackageReference Include="bblanchon.PDFium.Win32" Version="157.0.8100" />
+    <!-- Pin the patched transitive dependency used by PDFsharp. -->
+    <PackageReference Include="System.Security.Cryptography.Pkcs" Version="8.0.2" />
+  </ItemGroup>
+</Project>
