@@ -10,11 +10,11 @@
       },
       "Magick.NET-Q8-x64": {
         "type": "Direct",
-        "requested": "[15.0.0, )",
-        "resolved": "15.0.0",
-        "contentHash": "RVfIbAddWlHEr6aJiYAYIRn1P7bQUoSv9GJN0fZmcatnenaD4KTtzoxOFYq67KXegLTsBQHsGdjzgGDW5d4Ing==",
+        "requested": "[15.1.0, )",
+        "resolved": "15.1.0",
+        "contentHash": "Fo6mQGnG+MtO8ehF/vpGeN/4OlZRDLO7uv4v2yOlxJGxX0JurLMBt1nYMX4QzPVssdlnpI446W2PEw+27beHbQ==",
         "dependencies": {
-          "Magick.NET.Core": "15.0.0"
+          "Magick.NET.Core": "15.1.0"
         }
       },
       "PdfPig": {
@@ -47,8 +47,8 @@
       },
       "Magick.NET.Core": {
         "type": "Transitive",
-        "resolved": "15.0.0",
-        "contentHash": "mP/VovMRuXBX2Rcnn1wWu0Zur6cjsf8IQhmTUCrasEk8cyAtN5sjHE7NxiH88whw8/2mjRvuphKUwj6bAZslpQ=="
+        "resolved": "15.1.0",
+        "contentHash": "WIaemRN4tJvw5BNUfsO8/V3LojV5FOCojQ/sQ4ruXme1o2frRYfcvHPhKV5E6TbYoEdVEvtGX+8Wbut0F2lJHg=="
       },
       "Microsoft.Extensions.DependencyInjection": {
         "type": "Transitive",
@@ -94,29 +94,6 @@
         "type": "Transitive",
         "resolved": "8.0.0",
         "contentHash": "bXJEZrW9ny8vjMF1JV253WeLhpEVzFo1lyaZu1vQ4ZxWUlVvknZ/+ftFgVheLubb4eZPSwwxBeqS1JkCOjxd8g=="
-      }
-    },
-    "net8.0-windows10.0.19041/win-x64": {
-      "bblanchon.PDFium.Win32": {
-        "type": "Direct",
-        "requested": "[157.0.8100, )",
-        "resolved": "157.0.8100",
-        "contentHash": "OeimMc5Zn7XFuiczK1/C88Xfe3Ney4fxIxnhKfO44TVIvMhNqEbkbrRYaFGS5SMveaw3uDG0lewgV9qICZjpAQ=="
-      },
-      "Magick.NET-Q8-x64": {
-        "type": "Direct",
-        "requested": "[15.0.0, )",
-        "resolved": "15.0.0",
-        "contentHash": "RVfIbAddWlHEr6aJiYAYIRn1P7bQUoSv9GJN0fZmcatnenaD4KTtzoxOFYq67KXegLTsBQHsGdjzgGDW5d4Ing==",
-        "dependencies": {
-          "Magick.NET.Core": "15.0.0"
-        }
-      },
-      "System.Security.Cryptography.Pkcs": {
-        "type": "Direct",
-        "requested": "[8.0.2, )",
-        "resolved": "8.0.2",
-        "contentHash": "VWACYq0JGxi9sw3TonSSV4B2MfhYk5nhgOtp9wbrt5NFOtUetFqHkMZylcCwPX+117cBJH5EnIzIy6X4OKn/kA=="
       }
     }
   }
