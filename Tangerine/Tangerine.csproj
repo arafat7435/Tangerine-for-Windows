@@ -31,7 +31,7 @@
   <ItemGroup>
     <EmbeddedResource Include="Assets\highlight.wav" LogicalName="Tangerine.Assets.highlight.wav" Condition="'$(TangerinePublicRelease)' != 'true' and Exists('Assets\highlight.wav')" />
     <PackageReference Include="Magick.NET-Q8-x64" Version="15.0.0" />
-    <PackageReference Include="PDFsharp" Version="6.2.2" />
+    <PackageReference Include="PDFsharp" Version="6.5.0" />
     <PackageReference Include="SharpCompress" Version="1.0.0" />
     <PackageReference Include="PdfPig" Version="0.1.16" />
     <PackageReference Include="bblanchon.PDFium.Win32" Version="157.0.8100" />
