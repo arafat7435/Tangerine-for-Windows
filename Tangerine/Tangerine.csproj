@@ -34,7 +34,7 @@
     <PackageReference Include="PDFsharp" Version="6.2.2" />
     <PackageReference Include="SharpCompress" Version="1.0.0" />
     <PackageReference Include="PdfPig" Version="0.1.16" />
-    <PackageReference Include="bblanchon.PDFium.Win32" Version="157.0.8100" />
+    <PackageReference Include="bblanchon.PDFium.Win32" Version="159.0.8152" />
     <!-- Pin the patched transitive dependency used by PDFsharp. -->
     <PackageReference Include="System.Security.Cryptography.Pkcs" Version="8.0.2" />
   </ItemGroup>
