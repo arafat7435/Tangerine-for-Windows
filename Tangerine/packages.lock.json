@@ -4,9 +4,9 @@
     "net8.0-windows10.0.19041": {
       "bblanchon.PDFium.Win32": {
         "type": "Direct",
-        "requested": "[157.0.8100, )",
-        "resolved": "157.0.8100",
-        "contentHash": "OeimMc5Zn7XFuiczK1/C88Xfe3Ney4fxIxnhKfO44TVIvMhNqEbkbrRYaFGS5SMveaw3uDG0lewgV9qICZjpAQ=="
+        "requested": "[160.0.8165, )",
+        "resolved": "160.0.8165",
+        "contentHash": "YQzaQpjbP7TEmmjxOd4W7Okub+8/Mj0trnGB4v9VJROXwynxwVBlNGEjMoFrpDGd1FMFeYzKG4oaeTx/UIc6Nw=="
       },
       "Magick.NET-Q8-x64": {
         "type": "Direct",
@@ -94,29 +94,6 @@
         "type": "Transitive",
         "resolved": "8.0.0",
         "contentHash": "bXJEZrW9ny8vjMF1JV253WeLhpEVzFo1lyaZu1vQ4ZxWUlVvknZ/+ftFgVheLubb4eZPSwwxBeqS1JkCOjxd8g=="
-      }
-    },
-    "net8.0-windows10.0.19041/win-x64": {
-      "bblanchon.PDFium.Win32": {
-        "type": "Direct",
-        "requested": "[157.0.8100, )",
-        "resolved": "157.0.8100",
-        "contentHash": "OeimMc5Zn7XFuiczK1/C88Xfe3Ney4fxIxnhKfO44TVIvMhNqEbkbrRYaFGS5SMveaw3uDG0lewgV9qICZjpAQ=="
-      },
-      "Magick.NET-Q8-x64": {
-        "type": "Direct",
-        "requested": "[15.0.0, )",
-        "resolved": "15.0.0",
-        "contentHash": "RVfIbAddWlHEr6aJiYAYIRn1P7bQUoSv9GJN0fZmcatnenaD4KTtzoxOFYq67KXegLTsBQHsGdjzgGDW5d4Ing==",
-        "dependencies": {
-          "Magick.NET.Core": "15.0.0"
-        }
-      },
-      "System.Security.Cryptography.Pkcs": {
-        "type": "Direct",
-        "requested": "[8.0.2, )",
-        "resolved": "8.0.2",
-        "contentHash": "VWACYq0JGxi9sw3TonSSV4B2MfhYk5nhgOtp9wbrt5NFOtUetFqHkMZylcCwPX+117cBJH5EnIzIy6X4OKn/kA=="
       }
     }
   }
